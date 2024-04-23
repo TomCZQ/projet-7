@@ -1,0 +1,76 @@
+.headlines-banner {
+  width: 1240px;
+  height: 223px;
+  margin: auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+.headlines-banner p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.headlines-banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.headlines-banner .img-overlay {
+  background-color: black;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  opacity: 0.65;
+  position: relative;
+  bottom: 233px;
+  z-index: 0;
+}
+.headlines-banner p {
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: -420px;
+  z-index: 999;
+}
+
+.cards-container {
+  background-color: #f6f6f6;
+  width: 1240px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  gap: 50px;
+  border-radius: 25px;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.cards-container a {
+  width: 30%;
+  border-radius: 10px;
+}
+.cards-container a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+}
+.cards-container a h2 {
+  position: relative;
+  width: 250px;
+  bottom: 80px;
+  left: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+}/*# sourceMappingURL=home_body.css.map */

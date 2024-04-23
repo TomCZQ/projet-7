@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1240px;
+  margin: auto;
+  margin-top: 50px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}/*# sourceMappingURL=header.css.map */
