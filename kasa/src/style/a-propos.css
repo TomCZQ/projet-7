@@ -1,0 +1,9 @@
+.dropdown-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: auto;
+  background-color: white;
+}/*# sourceMappingURL=a-propos.css.map */

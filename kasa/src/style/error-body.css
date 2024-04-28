@@ -1,0 +1,28 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error-container p {
+  color: #FF6060;
+}
+.error-container .visual {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 120px;
+}
+.error-container .error-description {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 120px;
+}
+.error-container .home-link {
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 500;
+  text-underline-offset: 3px;
+  color: black;
+  margin-bottom: 120px;
+}/*# sourceMappingURL=error-body.css.map */
