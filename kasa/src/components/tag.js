@@ -2,13 +2,10 @@ import "../style/tag.css"
 
 function Tag(props) {
     
-    return(
-        <div className="tag">
-        <p>{props.tag}</p>
-    </div>
+    return(   
+        <p className='tag'>{props.tag}</p>
     )
 
 }
-
 
 export default Tag;

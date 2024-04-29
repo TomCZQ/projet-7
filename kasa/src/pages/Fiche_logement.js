@@ -4,6 +4,8 @@ import Tag from '../components/tag.js';
 import data from '../data/logements.json'
 import Dropdown from '../components/dropdown.js';
 import Stars from '../components/Stars.js'
+import Carousel from '../components/carousel.js'
+import '../style/fiche-logement.css'
 
 
 function findLogementById(logementId) {
@@ -18,9 +20,10 @@ function ratingGenerator(rating){
 function FichesLogement(){
 
     const  {id: logementId} = useParams();
-    console.log(logementId)
     const logement = findLogementById(logementId);
     const equipements = logement.equipements
+    const host = logement.host
+    const coverPictures = logement.pictures
 
     function tagGenerator(tags){
         const tagComponents = []; 
@@ -42,19 +45,20 @@ function FichesLogement(){
     
     return (
         <div className="fiche-logement">
-            <img className="main-picture" src={logement.cover} alt={logement.title} />
-            <div>
+            <Carousel pictures={coverPictures} logement={logement} />
+            <div className='logement-informations'>
                 <div className='logement'>
                     <h1>{logement.title}</h1>
-                    <p>{logement.description}</p>
+                    <p>{logement.location}</p>
                 </div>
-                <div>
+                <div className='host'>
                     <p className='host-name'>
+                        {host.name}
                     </p>
-                    <img className = 'host-picture'></img>
+                    <img className = 'host-picture' src={host.picture}></img>
                 </div>
             </div>
-            <div>
+            <div className='tags-rating'>
                 <div className = 'tags'>
                     {tagGenerator(logement.tags)}   
                 </div>
@@ -62,8 +66,10 @@ function FichesLogement(){
 
                 </div>
             </div>
-            <Dropdown dropdownName = "Description" description={logement.description} />
-            <Dropdown dropdownName = "Équipements" description={equipement()} />
+            <div className='dropdowns'>
+                <Dropdown className='dropdown' dropdownName = "Description" description={logement.description} />
+                <Dropdown className='dropdown' dropdownName = "Équipements" description={equipement()} />
+            </div>
             
         </div>
     )
