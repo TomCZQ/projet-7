@@ -7,14 +7,16 @@ import { Link, useLocation } from 'react-router-dom';
 export default function Header(){
     const location = useLocation();
     const pathName = (location.pathname);
+
     return(
-        <div className="header">
-            <img src={logo} alt='Logo Kasa'></img>
+
+        <header className="header">
+            <Link to="/" className= {pathName === '/' ? 'active-link-header logo-header-link' : "logo-header-link"}><img src={logo} className="logo-header" alt='Logo Kasa'></img></Link>
             <div className='navbar'>
-                <Link to="/" className= {pathName === '/' ? 'active-link-header' : ""}>Accueil</Link>
-                <Link to="/a-propos" className= {pathName === '/a-propos' ? 'active-link-header' : ""}>A propos</Link>
+                <Link to="/" className= {pathName === '/' ? 'active-link-header accueil-link' : ""}>Accueil</Link>
+                <Link to="/a-propos" className=  {pathName === '/a-propos' ? 'active-link-header propos-link' : "propos-link"}>A propos</Link>
             </div> 
-        </div>
+        </header>       
     )
 }
 

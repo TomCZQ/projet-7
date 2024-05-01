@@ -7,6 +7,12 @@
 }
 .fiche-logement .tags-rating {
   margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  align-items: center;
 }
 .fiche-logement .tags-rating .tags {
   display: flex;

@@ -2,7 +2,8 @@
   display: flex;
   background-color: #ff6060;
   border-radius: 10px;
-  width: 115px;
+  min-width: 85px;
+  width: auto;
   height: 25px;
   text-align: center;
   justify-content: center;
@@ -10,4 +11,6 @@
   font-size: 14px;
   font-weight: 700;
   padding-top: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
 }/*# sourceMappingURL=tag.css.map */

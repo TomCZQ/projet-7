@@ -8,7 +8,12 @@
   font-size: 48px;
   color: white;
 }
-.headlines-banner p {
+.headlines-banner .banner-text {
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: -370px;
+  z-index: 999;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .headlines-banner img {
@@ -29,13 +34,6 @@
   position: relative;
   bottom: 233px;
   z-index: 0;
-}
-.headlines-banner p {
-  text-align: center;
-  justify-content: center;
-  position: relative;
-  top: -420px;
-  z-index: 999;
 }
 
 .cards-container {
@@ -87,4 +85,11 @@
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
   opacity: 0.9;
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    max-width: 100%;
+    margin: auto;
+  }
 }/*# sourceMappingURL=home_body.css.map */

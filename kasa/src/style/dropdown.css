@@ -33,13 +33,16 @@
   height: auto;
   font-size: 18px;
   font-weight: 400;
-  padding-left: 10px;
   border-radius: 0 0 5px 5px;
   position: relative;
   width: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.content {
+  margin: 1s0px;
 }
 
 .open.dropdown-content {
@@ -47,7 +50,7 @@
 }
 
 .chevron-dropdown {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .dropdown.open .chevron-dropdown {

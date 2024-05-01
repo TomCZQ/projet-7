@@ -1,11 +1,9 @@
-import "../style/tag.css"
+import "../style/tag.css";
 
 function Tag(props) {
-    
-    return(   
-        <p className='tag'>{props.tag}</p>
-    )
-
+  return <div className="tag">{props.tag}</div>;
 }
 
 export default Tag;
+
+//                      ICI                    //

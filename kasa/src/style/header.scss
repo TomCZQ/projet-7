@@ -8,19 +8,49 @@
     margin-top: 50px;
     font-weight: 500;
     font-size: 24px;
-    margin-bottom: 50px;
-   
+    margin-bottom: 50px;   
 }
+
 .navbar{
     display: flex;
     flex-direction: row;
     gap: 30px;
+
     a{
         color: black;
     }
+
     .active-link-header{
         text-decoration: underline;
         text-underline-offset: 5px;
     }
+
 }
 
+@media screen and (max-width: 768px) {
+
+    .header{
+        justify-content:space-between;
+        padding:20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width:100%;
+        gap: 40px;
+    
+        .navbar{
+            justify-content: flex-end;
+            gap:15%;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            width: 68%;
+            
+        }  
+
+        .logo-header-link{
+            width:45%;
+            max-width: 150px;
+        }
+
+    }
+}
