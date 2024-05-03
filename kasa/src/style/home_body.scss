@@ -111,5 +111,48 @@
         margin: auto;
     }
 
+    .headlines-banner{
+
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 111px;
+        max-width: calc(100% - 40px);
+      
+    }
+
+    .headlines-banner .img-overlay{
+        
+        bottom: 122px;
+    }
+
+    .headlines-banner .banner-text{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .headlines-banner .banner-text{
+
+        width: 70%;
+        text-align: left;
+        top: -205px;
+        margin-left: 20px;
+    }
+
+    .cards-container{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        max-width: calc(100% - 40px);
+    }
+
+    .cards-container .card{
+        padding: 0;
+        height: 255px;
+    }
+
+
 
 }

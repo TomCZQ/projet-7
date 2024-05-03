@@ -12,4 +12,7 @@ a {
     max-width: 100%;
     box-sizing: border-box;
   }
+  main {
+    align-items: center;
+  }
 }/*# sourceMappingURL=App.css.map */

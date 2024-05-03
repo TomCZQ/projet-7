@@ -23,11 +23,11 @@
   color: #F5F5F5;
 }
 .carousel .left-chevron {
-  bottom: 250px;
+  bottom: 280px;
   left: 20px;
 }
 .carousel .right-chevron {
-  bottom: 329px;
+  bottom: 360px;
   left: 1175px;
 }
 .carousel .bulletNumbers {
@@ -37,4 +37,33 @@
   bottom: 40px;
   font-size: 24px;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    max-width: 100%;
+  }
+  .carousel .left-chevron, .carousel .right-chevron {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+  .carousel .left-chevron:hover, .carousel .right-chevron:hover {
+    color: #F5F5F5;
+  }
+  .carousel .main-picture {
+    height: 255px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .carousel .left-chevron {
+    bottom: 140px;
+    left: 10px;
+  }
+  .carousel .right-chevron {
+    bottom: 165px;
+    left: 335px;
+  }
+  .carousel .bulletNumbers {
+    display: none;
+  }
 }/*# sourceMappingURL=carousel.css.map */
