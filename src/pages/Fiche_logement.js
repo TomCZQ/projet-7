@@ -35,7 +35,7 @@ function FichesLogement() {
       setRating(logement.rating);
       setLoading(false);
     }
-  }, []);
+  }, [logement, navigate]);
 
   function tagGenerator(tags) {
     const tagComponents = [];
@@ -74,7 +74,7 @@ function FichesLogement() {
             <img
               className="host-picture"
               src={host?.picture}
-              alt="Photo de l'hôte"
+              alt="Propriétaire du logement"
             ></img>
           </div>
           <Rating rating={rating} />
