@@ -1,4 +1,4 @@
-import React, { useState, Link } from "react";
+import React, { useState } from "react";
 import {
   faChevronLeft,
   faChevronRight,
@@ -25,7 +25,7 @@ function Carousel(props) {
 
   return (
     <div className="carousel">
-      <a href={pictures[indexPicture]} target="_blank">
+      <a href={pictures[indexPicture]} target="_blank" rel="noreferrer">
         <img
           className="main-picture"
           src={pictures[indexPicture]}

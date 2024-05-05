@@ -12,12 +12,12 @@ function findLogementById(logementId) {
 }
 
 function FichesLogement() {
-  const navigate = useNavigate();
+  const navigate = useNavigate("");
   const { id: logementId } = useParams();
+  const logement = findLogementById(logementId);
   const [equipments, setEquipments] = useState([]);
   const [host, setHost] = useState("");
   const [coverPictures, setCoverPictures] = useState([]);
-  const logement = findLogementById(logementId);
   const [title, setTitle] = useState("");
   const [location, setLocation] = useState("");
   const [loading, setLoading] = useState(true);
@@ -71,7 +71,11 @@ function FichesLogement() {
         <div className="host-rating">
           <div className="host">
             <p className="host-name">{host?.name}</p>
-            <img className="host-picture" src={host?.picture}></img>
+            <img
+              className="host-picture"
+              src={host?.picture}
+              alt="Photo de l'hôte"
+            ></img>
           </div>
           <Rating rating={rating} />
         </div>
