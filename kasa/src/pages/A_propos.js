@@ -1,6 +1,6 @@
 import Headlines from "../components/home/Home_headline_Banner";
 import background from "../assets/background_headlines_2.png";
-import Dropdown from "../components/Dropdown";
+import Dropdown from "../components/dropdown.js";
 import "../style/a-propos.css";
 import aboutDatas from "../data/about.json";
 
@@ -17,7 +17,7 @@ export default function APropos() {
           />
         ))}
       </div>
-      ;
+      
     </div>
   );
 }

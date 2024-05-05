@@ -1,9 +1,12 @@
 .tag {
     display: flex;
+    flex-wrap: wrap;
     background-color: #ff6060;
     border-radius: 10px;
-    min-width: 85px;
     width: auto;
+    min-width: 85px;
+    max-width: 1000px;
+    
     height: 25px;
     text-align: center;
     justify-content: center;

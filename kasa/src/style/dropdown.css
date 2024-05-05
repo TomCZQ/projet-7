@@ -42,7 +42,7 @@
 }
 
 .content {
-  margin: 1s0px;
+  margin: 10px;
 }
 
 .open.dropdown-content {
@@ -55,4 +55,12 @@
 
 .dropdown.open .chevron-dropdown {
   transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown-button {
+    height: 30px;
+    font-size: 13px;
+    font-weight: 700;
+  }
 }/*# sourceMappingURL=dropdown.css.map */

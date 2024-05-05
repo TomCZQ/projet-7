@@ -25,4 +25,20 @@
   text-underline-offset: 3px;
   color: black;
   margin-bottom: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .error-container .visual {
+    font-size: 96px;
+    margin-top: 60px;
+  }
+  .error-container .error-description {
+    font-size: 18px;
+    width: 60%;
+    text-align: center;
+  }
+  .error-container .home-link {
+    font-size: 14px;
+    margin-bottom: 80px;
+  }
 }/*# sourceMappingURL=error-body.css.map */

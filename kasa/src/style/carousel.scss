@@ -25,11 +25,11 @@
     }
 
     .left-chevron{
-        bottom:250px;
+        bottom:280px;
         left:20px;
     }
     .right-chevron{
-        bottom:329px;
+        bottom:360px;
         left:1175px;
     }
     
@@ -43,4 +43,42 @@
         
     }
 
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .carousel{
+
+        max-width: 100%;
+
+        .left-chevron, .right-chevron{
+            font-size: 24px;
+            width:24px;
+            height: 24px;
+    
+            &:hover {
+                color: #F5F5F5;
+            }
+        }
+
+        .main-picture{
+            height: 255px;
+            border-radius: 20px 20px 20px 20px;
+        }
+    
+        .left-chevron{
+            bottom:140px;
+            left:10px;
+        }
+        .right-chevron{
+            bottom:165px;
+            left: 335px;
+        }
+        .bulletNumbers{
+            display: none;
+        }
+
+
+    }
 }

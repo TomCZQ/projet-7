@@ -1,7 +1,5 @@
 import React from "react";
 
-import background from "../../assets/background_headlines.png";
-
 export default function Headlines(props) {
   return (
     <div className="headlines-banner">
