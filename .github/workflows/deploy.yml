@@ -29,8 +29,8 @@ jobs:
 
       - name: Set up Git user
         run: |
-          git config --global user.name "Votre nom"
-          git config --global user.email "votre.email@example.com"
+          git config --global user.name "TomCZQ"
+          git config --global user.email "thomasdevpro38@gmail.com"
 
 
       # Runs a set of commands using the runners shell
