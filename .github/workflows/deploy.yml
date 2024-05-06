@@ -2,6 +2,8 @@
 
 name: CI
 
+
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
@@ -24,6 +26,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+
+      - name: Set up Git user
+        run: |
+          git config --global user.name "Votre nom"
+          git config --global user.email "votre.email@example.com"
+
 
       # Runs a set of commands using the runners shell
       - name: install dependencies
