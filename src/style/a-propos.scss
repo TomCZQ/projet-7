@@ -1,4 +1,4 @@
-.dropdown-container{
+.dropdown-container {
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -13,8 +13,8 @@
 
 @media screen and (max-width: 768px) {
 
-    .dropdown-container{
-    
+    .dropdown-container {
+
         max-width: calc(100% - 40px);
         margin: auto;
         margin-top: 20px;
