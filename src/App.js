@@ -5,14 +5,14 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import Home from "./pages/Home";
-import APropos from "./pages/A_propos";
-import Error from "./pages/Error";
-import FichesLogement from "./pages/Fiche_logement";
+import Home from "./pages/Home/Home";
+import APropos from "./pages/A_propos/A_propos";
+import Error from "./pages/Error/Error";
+import FichesLogement from "./pages/Fiche_logement/Fiche_logement";
 
 import "./style/App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
