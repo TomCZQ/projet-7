@@ -1,21 +1,25 @@
-*{
+* {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
-a{
+body {
+    max-width: 100%;
+}
+
+a {
     text-decoration: none;
 }
 
 
 @media screen and (max-width: 768px) {
 
-    *{
+    * {
         max-width: 100%;
         box-sizing: border-box;
     }
 
-    main{
+    main {
         align-items: center;
     }
 

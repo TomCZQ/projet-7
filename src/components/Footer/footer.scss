@@ -1,0 +1,38 @@
+.footer {
+    background-color: black;
+    width: 1440px;
+    height: 209px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 1450px) {
+        max-width: 100%;
+
+    }
+
+    img {
+        width: 122px;
+        padding-top: 50px;
+    }
+
+    p {
+        color: white;
+        font-size: 24px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            width: 30%;
+            text-align: center;
+        }
+    }
+}
