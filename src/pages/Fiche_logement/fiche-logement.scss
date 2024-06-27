@@ -17,9 +17,11 @@
         justify-content: space-between;
         width: 1240px;
 
+
         @media screen and (max-width: 768px) {
             flex-direction: column;
-            margin-top: 110px;
+            margin-top: 10px;
+
         }
 
         @media screen and (max-width: 1256px) {
@@ -149,6 +151,7 @@
         margin-bottom: -150px;
 
         @media screen and (max-width: 768px) {
+            margin-bottom: -17 0px;
             height: 255px;
             border-radius: 20px 20px 20px 20px;
         }
