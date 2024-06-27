@@ -62,7 +62,11 @@ function FichesLogement() {
       {coverPictures.length > 1 ? (
         <Carousel pictures={coverPictures} logement={logement} />
       ) : (
-        <img src={coverPictures[0]} alt="Logement" className="single-picture" />
+        <img
+          src={coverPictures[0]}
+          alt="Logement"
+          className="single-picture carousel"
+        />
       )}
       <div className="logement-data">
         <div className="logement-tags">
